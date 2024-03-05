@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../assets/Avenir.ttc);
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 10px;
+}
+
+.img {
+    height: 70px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navelements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-family: Avenir;
+
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    padding: 10px 0px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: white;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 100%;
+  }
+  
+  .nav-link-fade-up::before {
+    width: 100%;
+    bottom: 5px;
+    opacity: 0;
+  }
+  
+  .nav-link-fade-up:hover::before {
+    bottom: 10px;
+    opacity: 1;
+  }
+  
+  .nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+  }
+  
+  .nav-link-grow-up:hover::before {
+    height: 5px;
+  }
+
+
+
+
+.ctfd {
+    padding: 10px 50px;
+    width: 140px;
+    border-radius: 5px; /* Add border radius for rounded corners */
+    color: #fff; /* Change text color as needed */
+    font-weight: bold;
+    background-color: #003DA5;
+    margin: 30px;
+    font-family: Avenir;
+    stroke: #28294D;
+
+}
+
+.size {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
