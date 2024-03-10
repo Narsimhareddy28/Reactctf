@@ -9,6 +9,7 @@
     align-items: center;
     height: 100px;
     margin: 10px;
+    width: 100%;
 }
 
 .img {
@@ -96,15 +97,18 @@
 
 }
 
-.size {
-    position: absolute;
-    top: 0;
-    width: 100%;
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+ 
+  .navelements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-family: Avenir;
+
 }
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }

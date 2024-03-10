@@ -1,147 +1,214 @@
 @font-face {
-    font-family: modern;
-    src: url(../assets/ModernWarfare-OV7KP.ttf);
+  font-family: modern;
+  src: url(../assets/ModernWarfare-OV7KP.ttf);
 }
 @font-face {
-    font-family: SDDystopianDemo;
-    src: url(../assets/sdd.otf);
+  font-family: SDDystopianDemo;
+  src: url(../assets/sdd.otf);
 }
-
+.mainbody{
+display: blocks;
+}
 .blogo{
-    width: 250.54px;
-    height: 258.56px;
-    position: relative;
-    top: 70px;
-    left: 24%;
+  width: 250.54px;
+  height: 258.56px;
+  position: relative;
+  bottom: 30px;
+  left: 27%;
 }
 
-
+.center{
+display: block;
+position: absolute;
+height: 500px;
+top: 90px;
+}
 
 .body{
-    position: absolute;
-    top: 100px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 align-items: center;
+height: 100vh;
+
 }
 
 .bblogo
 {
-position: absolute;
-top: -30px;
+position: relative;
+top: 350px;
 width: 350.54px;
-left:37%;
+left:15%;
 height: 480.55999999999995px;
 opacity: 0.8;
 }
 
 .combo{
-    display: flex;
-    flex-direction: column;
-    width:507px ;
-
-    
+  display: flex;
+  flex-direction: column;
+  width:507px ;
+position: relative;
+bottom: 350px;
+  
 }
 .bblogolettercolor{
-    position: relative;
-    top: 92px;
-    filter: blur(8px);
-    background-color: #003ca5b1;
-    width:507px ;
-    height: 95px;
+  position: relative;
+  filter: blur(8px);
+  background-color: #003ca5b1;
+  width:507px ;
+  height: 95px;
 }
 .mod{
 
-    font-family: modern;
+  font-family: modern;
 }
 .sdd{
-    font-family: SDDystopianDemo;
+  font-family: SDDystopianDemo;
 
 }
 .cyberbilliken{
-    z-index: 2;
-    font-size: 50px;
-    padding-left: 25px;
-    padding-bottom: 20px;
+position: relative;
+  bottom: 85px;
+  z-index: 2;
+  font-size: 50px;
+  padding-left: 25px;
+  padding-bottom: 20px;
 }
 .description{
-    text-align: center;
-    overflow-wrap: break-word;
+position: relative;
+bottom: 85px;
+  text-align: center;
+  overflow-wrap: break-word;
 font-family: Avenir;
 font-weight:400 ;
-
 
 }
 
 .advisory{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column ;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
+  gap: 100px;
 }
 
 .meet{
-    font-family: SDDystopianDemo;
-    font-size: 40px;
+  font-family: SDDystopianDemo;
+  font-size: 40px;
 }
 
 .parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-gap: 100px;
+
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .container{
+      width: 252.09px   ;
+      height: 100%        ;
+  }
+
+  .container .card {
+      position: relative;
+      width: 292.09px   ;
+      height: 379px        ;
+      background: rgb(55,121,231);
+     background:  radial-gradient(circle, rgba(55,121,231,1) -27%, rgba(0,61,165,1) -4%, rgba(0,23,63,1) 101%)      ;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(0.8px);
+      --aug-border-all: 5px;
+      --aug-inset: 10px;
+      --aug-tl: 20px;
+      --aug-tl-extend2: 50px;
+      --aug-tr-extend2: 50px;
+      --aug-r-offset: -30px;
+      --aug-r-extend1: 70px;
+      --aug-br: 20px;
+      --aug-bl-extend2: 120px;
+      --aug-border-bg: linear-gradient(#3779e7, #041530d1), linear-gradient(to right, #003ca5, #052762), #00000086;
+      --aug-border-opacity: 1;
+    }
+
+    [data-augmented-ui~="both"]{
+      --aug-border: initial;
+      --aug-inlay: ;
 
     }
+
+    .card img{
+      position: relative;
+      top: 33px;
+      width: 100%;
+      height: 80%;
+    }
+
+    .infocontainer{
+      margin-left:20px ;
+    }
+    .membername{
+      font-family: none;
+      font-weight: 900;
+      font-size: 25px;
+    }
+
+    .socicons{
+      padding-right: 10px;
+
+    }
+    .socicons img{
+      height: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+      .bblogo
+      {
+      position: relative;
+      width: 350.54px;
+      left:12%;
+      height: 480.55999999999995px;
+      opacity: 0.8;
+      }
+
+      .blogo{
+        width: 250.54px;
+        height: 258.56px;
+        position: relative;
+        top: -20px;
+        left: 24%;
+    }
+    .combo{
+      display: flex;
+      flex-direction: column;
+      width:507px ;
+  position: relative;
+  bottom: 400px;   
+left: 15px; }
+  
+.parent {
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+grid-template-columns: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+grid-gap: 100px;
+justify-items: center;
+align-items: center
+
+}
     
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 1 / 3 / 2 / 4; }
-    .container{
-        width: 292.09px   ;
-        height: 100%        ;
-    }
 
-    .container .card {
-        position: relative;
-        width: 292.09px   ;
-        height: 379px        ;
-        background: rgb(55,121,231);
-       background:  radial-gradient(circle, rgba(55,121,231,1) -27%, rgba(0,61,165,1) -4%, rgba(0,23,63,1) 101%)      ;
-         display: flex;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(0.8px);
-        --aug-border-all: 5px;
-        --aug-inset: 10px;
-        --aug-tl: 20px;
-        --aug-tl-extend2: 50px;
-        --aug-tr-extend2: 50px;
-        --aug-r-offset: -30px;
-        --aug-r-extend1: 70px;
-        --aug-br: 20px;
-        --aug-bl-extend2: 120px;
-        --aug-border-bg: linear-gradient(#3779e7, #041530d1), linear-gradient(to right, #003ca5, #052762), #00000086;
-        --aug-border-opacity: 1;
-      }
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
 
-      [data-augmented-ui~="both"]{
-        --aug-border: initial;
-        --aug-inlay: ;
 
-      }
-
-      .card img{
-        position: relative;
-        top: 33px;
-        width: 100%;
-        height: 80%;
-      }
-
-      .infocontainer{
-        margin-left:20px ;
-      }
+  }

@@ -48,7 +48,15 @@
 }
 #myVideo {
   opacity: 0.2;
-  position: relative;
+  position: absolute;
   right: 0;
-width: 100%; 
+  top: 0;
+width: 100%;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+ /* *{
+  overflow-x: hidden;
+ } */
 }

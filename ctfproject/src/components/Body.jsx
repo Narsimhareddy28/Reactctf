@@ -4,15 +4,49 @@ import blogo from "../assets/foxlogo.png";
 import bblogo from "../assets/bblogo.png";
 import mw from "../assets/mw.png";
 import browser from "../assets/browser.png";
+import Card from './Card.jsx';
+
 
 function Body() {
+
+  const cardData = [
+    {
+      name: "Maria Weber",
+      role: "Director, Cybersecurity",
+      position: "Interim Director of Information System",
+      linkedlin_link:"",
+      weblink:"https://www.slu.edu/professional-studies/contact-us/faculty/maria-weber.php",
+      image: mw
+    },
+    {
+      name: "Kyle Wilhoit ",
+      role: "Faculty Advisor,",
+      position: "Blackhat US Review Board Member",
+      linkedlin_link:"",
+      weblink:"",
+      image: mw
+    },
+    {
+      name: "Syam Sai  Siddabhattula ",
+      role: "Team Captain",
+      position: " ",
+      linkedlin_link:"",
+      weblink:"",
+      image: mw
+    }
+  ];
+
+
   return (
     <>
-      <div>
+      <div >
+        <div className="mainbody">
         <div className="body">
           <div className="center">
-            <img src={bblogo} alt="" className="bblogo" />
             <div className="combo">
+              
+            <img src={bblogo} alt="" className="bblogo" />
+
               <img src={blogo} alt="" className="blogo" />
               <div className="bblogolettercolor"></div>
               <div className="cyberbilliken">
@@ -35,51 +69,22 @@ function Body() {
             </div>
           </div>
         </div>
-        <div className="advisory">
-          <p className="meet">Meet Our Advisory Board</p>
-          <div class="parent">
-            <div class="div1">
-              <div class="container">
-                <div
-                  class="card"
-                  data-augmented-ui="both tl-2-clip-x tr-2-clip-y r-clip-y br-clip bl-2-clip-y"
-                >
-                  <img src={mw} alt="" />
-                </div>
-                <div className="infocontainer">
-                  <p>Maria Weber</p>
-                  <p>Director, Cybersecurity </p>
-                  <p>Interim Director of Information System</p>
-                  <span>
-                    <img src={browser} alt="" />
-                  </span>
-                  <span>
-                    <img src={browser} alt="" />
-                  </span>
-                </div>
-                
-              </div>
-            </div>
-            <div class="div2">
-              <div class="container">
-                <div
-                  class="card"
-                  data-augmented-ui="both tl-2-clip-x tr-2-clip-y r-clip-y br-clip bl-2-clip-y"
-                ></div>
-              </div>
-            </div>
-            <div class="div3">
-              <div class="container">
-                <div
-                  class="card"
-                  data-augmented-ui="both tl-2-clip-x tr-2-clip-y r-clip-y br-clip bl-2-clip-y"
-                ></div>
-              </div>
-            </div>
-
-            
-          </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <div className="advisory">
+      <p className="meet">Meet Our Advisory Board</p>
+      <div className="parent">
+        {cardData.map((card, index) => (
+          <div className={`div${index + 1}`} key={index}>
+            <div className="container">
+              <Card {...card} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
       </div>
     </>
   );
