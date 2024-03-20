@@ -24,7 +24,7 @@ function Contact() {
 
             <div className='flexwidth'>
             <div className='flexcontact'>
-                <h1>Contact Page</h1>
+                <h1 className='contactpages'>Contact Page</h1>
 
 
 
