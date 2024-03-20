@@ -1,0 +1,115 @@
+.teams{
+
+      display: flex;
+justify-content: center;
+gap: 25%;
+
+}
+
+.mainbodyteams{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+.meet{
+font-family: SDDystopianDemo;
+}
+
+.parentteams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15rem;
+    grid-row-gap: 60px;
+justify-items: center;
+
+    }
+
+    .codename{
+        font-family: modern ;
+        border-color: aqua;
+        -webkit-text-stroke-color:#2764CC;
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 0 0 20px #ffffff4f, 0 0 5px #ffffff86;
+        text-align: center;
+
+    }
+
+    .container1 .card1 {
+        position: relative;
+        width: 272.09px   ;
+        height: 379px        ;
+        background: rgb(55,121,231);
+       background:  radial-gradient(circle, rgba(55,121,231,1) -27%, rgb(11, 41, 92) -4%, rgba(0,23,63,1) 101%)      ;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(0.8px);
+        --aug-border-all: 5px;
+        --aug-inset: 10px;
+        --aug-tl: 20px;
+        --aug-tl-extend2: 50px;
+        --aug-tr-extend2: 50px;
+        --aug-r-offset: -30px;
+        --aug-r-extend1: 70px;
+        --aug-br: 20px;
+        --aug-bl-extend2: 120px;
+        --aug-border-bg: linear-gradient(#3779e7, #041530d1), linear-gradient(to right, #003ca5, #052762), #00000086;
+        --aug-border-opacity: 1;
+      }
+  
+      [data-augmented-ui~="both"]{
+        --aug-border: initial;
+        --aug-inlay: ;
+  
+      }
+      
+  
+      .card img{
+        position: relative;
+        
+        top: 2px;
+        right: 6px;
+      }
+  
+      .infocontainer1{
+        padding-bottom: 10px;
+        width: 280.09px;
+        }
+        .membername1{
+            font-weight: 500;
+            font-size: 18px;  
+            margin-left: 20px;
+
+          }
+        .infocontainer1 p{
+            font-family: Avenir;
+            margin-left: 20px;
+            font-size: 15px;  
+
+        }
+   
+      .memberposition{
+        padding-bottom: 10px;
+      }
+  
+      .socicons{
+        padding-right: 10px;
+  
+      }
+      .socicons img{
+        height: 20px;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px){
+        .parentteams {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: 10rem;
+          grid-row-gap: 60px;
+      justify-items: center;
+      
+          }
+      }

@@ -1,0 +1,8 @@
+.bgundermain {
+    background-image: url("../assets/under_construction_bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    background-color: #191919 ;
+
+}

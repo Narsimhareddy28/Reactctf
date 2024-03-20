@@ -1,0 +1,32 @@
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .countdown-item {
+    margin: 0 10px;
+    text-align: center;
+    
+  }
+  
+  .countdown-label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 15px;
+  }
+  
+  .countdown-value,
+  .countdown-value1,
+  .countdown-value2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #C3D7F6;
+  }
+
+
+

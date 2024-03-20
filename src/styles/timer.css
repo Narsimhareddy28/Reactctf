@@ -1,0 +1,79 @@
+
+
+*{
+    margin: 0%;
+  }
+  .timer {
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    /* background-image: url('../assets/image1.png'); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  }
+
+
+
+  .timer::before{
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/image1.png');
+background-position: 40px 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+  }
+   .timer h1{
+    color: white;
+    font-family: SDDystopianDemo;
+    padding-bottom: 10px;
+    font-size: 36px;
+   }
+  
+  .timer p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    color: #A9ACB1    ;
+    width: 400px;
+    font-family: Avenir;
+  }
+  
+  
+  
+  .btimer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .counttimer{
+    padding: 25px;
+  }
+
+  .right{
+    background-color: #003DA5  ;
+    padding: 15px;
+    width: 200px;
+    margin-left: 15px;
+    border: 0;
+    font-family: Avenir;
+    font-size: 20px;
+    opacity: 1;
+
+  }
+  .but{
+    padding: 20px;
+    
+  }
