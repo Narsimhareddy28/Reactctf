@@ -13,7 +13,7 @@ const Card = ({ name, role, position, image ,linkedlin_link,weblink}) => {
       <div className="infocontainer">
         <p className='membername'>{name}</p>
         <p>{role}</p>
-        <p>{position}</p>
+        <p className='memberposition'>{position}</p>
         <span className='socicons'>
           <a href={linkedlin_link}>
           <img src={lnkdln}  alt="" /></a>

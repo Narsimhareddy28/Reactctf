@@ -46,14 +46,7 @@
 
 *{
 }
-#myVideo {
-  opacity: 0.2;
-  position: absolute;
-  right: 0;
-  top: 0;
-width: 100%;
- 
-}
+
 
 @media (min-width: 768px) and (max-width: 1024px){
  /* *{

@@ -13,8 +13,8 @@ display: blocks;
   width: 250.54px;
   height: 258.56px;
   position: relative;
-  bottom: 30px;
-  left: 27%;
+bottom: 380px;  
+left: 27%;
 }
 
 .center{
@@ -36,7 +36,7 @@ height: 100vh;
 .bblogo
 {
 position: relative;
-top: 350px;
+top: 0px;
 width: 350.54px;
 left:15%;
 height: 480.55999999999995px;
@@ -47,12 +47,12 @@ opacity: 0.8;
   display: flex;
   flex-direction: column;
   width:507px ;
-position: relative;
-bottom: 350px;
+
   
 }
 .bblogolettercolor{
   position: relative;
+bottom:  350px;
   filter: blur(8px);
   background-color: #003ca5b1;
   width:507px ;
@@ -68,7 +68,7 @@ bottom: 350px;
 }
 .cyberbilliken{
 position: relative;
-  bottom: 85px;
+  bottom: 435px;
   z-index: 2;
   font-size: 50px;
   padding-left: 25px;
@@ -76,7 +76,7 @@ position: relative;
 }
 .description{
 position: relative;
-bottom: 85px;
+bottom: 420px;
   text-align: center;
   overflow-wrap: break-word;
 font-family: Avenir;
@@ -90,6 +90,7 @@ font-weight:400 ;
   align-items: center;
   flex-direction:column ;
   gap: 100px;
+  background-color: #191919;
 }
 
 .meet{
@@ -103,7 +104,7 @@ font-weight:400 ;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-gap: 100px;
+  grid-gap: 200px;
 
   }
   
@@ -117,13 +118,14 @@ font-weight:400 ;
 
   .container .card {
       position: relative;
-      width: 292.09px   ;
+      width: 272.09px   ;
       height: 379px        ;
       background: rgb(55,121,231);
      background:  radial-gradient(circle, rgba(55,121,231,1) -27%, rgba(0,61,165,1) -4%, rgba(0,23,63,1) 101%)      ;
        display: flex;
       justify-content: center;
       align-items: center;
+      
       backdrop-filter: blur(0.8px);
       --aug-border-all: 5px;
       --aug-inset: 10px;
@@ -143,21 +145,28 @@ font-weight:400 ;
       --aug-inlay: ;
 
     }
+    
 
     .card img{
       position: relative;
-      top: 33px;
+      top: 22px;
+      height: 100%;
       width: 100%;
-      height: 80%;
     }
 
     .infocontainer{
       margin-left:20px ;
-    }
+      padding-bottom: 10px;
+      }
     .membername{
-      font-family: none;
+      font-family: Avenir;
       font-weight: 900;
-      font-size: 25px;
+      font-size: 22px;
+      padding-top: 10px;
+
+    }
+    .memberposition{
+      padding-bottom: 10px;
     }
 
     .socicons{
@@ -167,22 +176,33 @@ font-weight:400 ;
     .socicons img{
       height: 20px;
     }
+    #myVideo {
+      opacity: 0.2;
+      right: 0;
+      top: 0;
+    z-index: -1;
+     width: 100%;
+     position: absolute;
+    }
 
     @media (min-width: 768px) and (max-width: 1024px){
       .bblogo
       {
       position: relative;
-      width: 350.54px;
+      width: 320.54px;
       left:12%;
-      height: 480.55999999999995px;
+      height: 430.55999999999995px;
       opacity: 0.8;
+      }
+
+      #myVideo{
+        width: 149%;
       }
 
       .blogo{
         width: 250.54px;
         height: 258.56px;
         position: relative;
-        top: -20px;
         left: 24%;
     }
     .combo{
@@ -190,8 +210,10 @@ font-weight:400 ;
       flex-direction: column;
       width:507px ;
   position: relative;
-  bottom: 400px;   
-left: 15px; }
+    left: 15px; 
+    bottom: 20PX;
+  }
+
   
 .parent {
 display: grid;
@@ -211,4 +233,11 @@ align-items: center
 .div3 { grid-area: 3 / 1 / 4 / 2; }
 
 
+  }
+
+
+  @media (min-width: 1024px) and (max-width: 1439px){
+    #myVideo{
+      width: 110%;
+    }
   }

@@ -1,0 +1,42 @@
+.countdown-card {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .countdown-label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #524eb7;
+  }
+  
+  .countdown-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #4C8EFF1A;
+    }
+
+    .countdown-value2 {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 30px;
+      border-radius: 5px;
+      background-color: #4C8EFF1A;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      }
+
+      .countdown-value1{
+        display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 30px;
+      background-color: #4C8EFF1A;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+    }

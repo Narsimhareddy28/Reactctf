@@ -1,26 +1,31 @@
-import { useState } from 'react'
-import video from './assets/backvideo.mov'
-import './App.css'
-import Navbar from './components/Navbar.jsx'
-import Body from './components/Body.jsx'
-
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar.jsx';
+import Body from './components/Body.jsx';
+import Footer from './components/Footer.jsx';
+import Teams from './components/Teams.jsx'; // Import the component for the other page
+import Contact from './components/Contact.jsx';
+import Maintain from './components/Maintain.jsx';
+import Achievements from './components/Achievements.jsx';
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-    <video autoPlay={true} muted loop id="myVideo">
-  <source src={video} type="video/mp4"/>
-</video>
-       <Navbar />
-       <Body/>
-       
-      
-      {/* <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-    </>
-  )
+    <Router>
+     
+      <Navbar />
+      <Routes>
+        <Route exact path="/" Component={Body} />
+        <Route path="/Teams" Component={Teams} />
+        <Route path="/Contact" Component={Contact} />
+        <Route path="/Resource" Component={Maintain} />
+        <Route path="/achieve" Component={Achievements} />
+
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -10,6 +10,7 @@
     height: 100px;
     margin: 10px;
     width: 100%;
+    
 }
 
 .img {
@@ -17,6 +18,21 @@
     width: auto; /* Maintain aspect ratio */
 }
 
+.logonav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: SDDystopianDemo ;
+  font-size: 25px;
+
+  justify-content: center;
+}
+.navcyber{
+  font-family: modern;
+}
+.navbilliken{
+  padding-left: 2px;
+}
 .navelements {
     display: flex;
     justify-content: space-between;
@@ -31,6 +47,7 @@
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
+    
     color:white;
     padding: 10px 0px;
     display: inline-block;
@@ -38,9 +55,11 @@
     opacity: 0.75;
 }
 
+
 .nav-link:hover {
     opacity: 1;
     color: white;
+    
   }
   
   .nav-link::before {
@@ -81,12 +100,17 @@
     height: 5px;
   }
 
-
+  .nav-link-ltr.active::before {
+    width: 100%;
+    font-weight: 900;
+  }
+  
 
 
 .ctfd {
-    padding: 10px 50px;
-    width: 140px;
+  display: flex;
+  flex-direction: row;
+    padding: 10px 10px;
     border-radius: 5px; /* Add border radius for rounded corners */
     color: #fff; /* Change text color as needed */
     font-weight: bold;
@@ -94,9 +118,13 @@
     margin: 30px;
     font-family: Avenir;
     stroke: #28294D;
+    font-size: 20px;
 
 }
-
+.ctfd:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
 
 
 
@@ -112,3 +140,4 @@
 }
 
 }
+
