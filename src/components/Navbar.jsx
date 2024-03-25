@@ -27,6 +27,8 @@ function Navbar() {
             <Link to="/Resource" className={`nav-link nav-link-ltr${location.pathname === '/Resource' ? ' active' : ''}`}> Resource</Link>
 
             <Link to="/Contact" className={`nav-link nav-link-ltr${location.pathname === '/Contact' ? ' active' : ''}`}> Contact Us</Link>
+            <Link to="/achieve" className={`nav-link nav-link-ltr${location.pathname === '/achieve' ? ' active' : ''}`}> Achievement</Link>
+
           </div>
 
           <div className='ctfd'>

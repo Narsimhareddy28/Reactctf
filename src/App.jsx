@@ -7,6 +7,7 @@ import Footer from './components/Footer.jsx';
 import Teams from './components/Teams.jsx'; // Import the component for the other page
 import Contact from './components/Contact.jsx';
 import Maintain from './components/Maintain.jsx';
+import Achievements from './components/Achievements.jsx';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Teams" Component={Teams} />
         <Route path="/Contact" Component={Contact} />
         <Route path="/Resource" Component={Maintain} />
+        <Route path="/achieve" Component={Achievements} />
 
       </Routes>
       <Footer />
